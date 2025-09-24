@@ -1,0 +1,40 @@
+/* Deluxe Inn Styles */
+/* Typography and base */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #1a202c; /* gray-900 */
+  color: #e2e8f0; /* gray-200 */
+  scroll-behavior: smooth;
+}
+
+/* Utility: section padding to complement Tailwind classes */
+.section-padding {
+  padding: 6rem 1.25rem; /* 96px top/bottom, 20px sides */
+}
+
+/* Hero background image moved from inline style */
+.hero-bg {
+  background-image: url('https://placehold.co/1920x1080/0d0d0d/e2e8f0?text=DELUXE+INN');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Map iframe rounded corners */
+.map-rounded {
+  border: 0;
+  border-radius: 0.75rem; /* matches rounded-xl */
+}
+
+/* Responsive refinements for padding utilities that pair with Tailwind */
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 8rem 1.5rem; /* 128px, 24px */
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-padding {
+    padding: 9rem 2rem; /* 144px, 32px */
+  }
+}

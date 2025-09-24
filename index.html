@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deluxe Inn</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-gray-900 bg-opacity-80 backdrop-blur-md shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-3xl font-bold text-yellow-500">Deluxe Inn</a>
+            <div class="md:hidden">
+                <button id="menu-button" class="text-gray-200 focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="nav-menu" class="hidden md:flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-8 text-lg font-medium">
+                <a href="#home" class="hover:text-yellow-500 transition-colors duration-300">Home</a>
+                <a href="#rooms" class="hover:text-yellow-500 transition-colors duration-300">Rooms</a>
+                <a href="#amenities" class="hover:text-yellow-500 transition-colors duration-300">Amenities</a>
+                <a href="#gallery" class="hover:text-yellow-500 transition-colors duration-300">Gallery</a>
+                <a href="#contact" class="hover:text-yellow-500 transition-colors duration-300">Contact</a>
+                <a href="#reservations" class="bg-yellow-500 text-gray-900 px-4 py-2 rounded-full font-bold hover:bg-yellow-400 transition-colors duration-300">Book Now</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="h-screen flex items-center justify-center text-center bg-cover bg-center hero-bg">
+        <div class="bg-gray-900 bg-opacity-60 p-10 rounded-xl max-w-2xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-bold text-yellow-500 leading-tight mb-4">Your Oasis of Comfort</h1>
+            <p class="text-lg md:text-xl mb-8">Experience unparalleled comfort and luxury at the Deluxe Inn, where every stay is a memorable one.</p>
+            <a href="#reservations" class="bg-yellow-500 text-gray-900 font-bold py-4 px-8 rounded-full text-lg hover:bg-yellow-400 transition-colors duration-300">Check Availability</a>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="section-padding bg-gray-800">
+        <div class="container mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-yellow-500">Our Rooms</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Room Card 1 -->
+                <div class="bg-gray-900 rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/2c2c2c/e2e8f0?text=Standard+King+Room" alt="Standard King Room" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Standard King</h3>
+                        <p class="text-gray-400 mb-4">A spacious room with a king-sized bed, perfect for solo travelers or couples.</p>
+                        <ul class="text-gray-400 list-disc list-inside space-y-1">
+                            <li>Complimentary Wi-Fi</li>
+                            <li>42-inch HDTV</li>
+                            <li>Mini-Fridge</li>
+                        </ul>
+                        <a href="#reservations" class="mt-4 inline-block bg-yellow-500 text-gray-900 font-semibold py-2 px-6 rounded-full hover:bg-yellow-400 transition-colors duration-300">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Room Card 2 -->
+                <div class="bg-gray-900 rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/2c2c2c/e2e8f0?text=Double+Queen+Room" alt="Double Queen Room" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Double Queen</h3>
+                        <p class="text-gray-400 mb-4">Two queen-sized beds, ideal for families or friends traveling together.</p>
+                        <ul class="text-gray-400 list-disc list-inside space-y-1">
+                            <li>Complimentary Wi-Fi</li>
+                            <li>Spacious Bathroom</li>
+                            <li>Work Desk</li>
+                        </ul>
+                        <a href="#reservations" class="mt-4 inline-block bg-yellow-500 text-gray-900 font-semibold py-2 px-6 rounded-full hover:bg-yellow-400 transition-colors duration-300">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Room Card 3 -->
+                <div class="bg-gray-900 rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/600x400/2c2c2c/e2e8f0?text=Executive+Suite" alt="Executive Suite" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Executive Suite</h3>
+                        <p class="text-gray-400 mb-4">Luxurious suite with a separate living area and breathtaking city views.</p>
+                        <ul class="text-gray-400 list-disc list-inside space-y-1">
+                            <li>Lounge Area</li>
+                            <li>Jacuzzi Tub</li>
+                            <li>Personal Concierge</li>
+                        </ul>
+                        <a href="#reservations" class="mt-4 inline-block bg-yellow-500 text-gray-900 font-semibold py-2 px-6 rounded-full hover:bg-yellow-400 transition-colors duration-300">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="section-padding">
+        <div class="container mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-yellow-500">Amenities</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Amenity 1 -->
+                <div class="text-center">
+                    <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-yellow-500 flex items-center justify-center text-gray-900 text-5xl">
+                        <!-- Icon Placeholder -->
+                        <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2">Free Wi-Fi</h3>
+                    <p class="text-gray-400">Stay connected with our high-speed internet, available throughout the hotel.</p>
+                </div>
+                <!-- Amenity 2 -->
+                <div class="text-center">
+                    <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-yellow-500 flex items-center justify-center text-gray-900 text-5xl">
+                        <!-- Icon Placeholder -->
+                        <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 10h-2V6h2c1.1 0 2-.9 2-2s-.9-2-2-2H6c-1.1 0-2 .9-2 2s.9 2 2 2h2v4H6c-1.1 0-2 .9-2 2s.9 2 2 2h2v4h2v-4h2v4h2v-4h2v4h2v-4h-2V10zm-6 2h-2v-2h2v2z"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2">Swimming Pool</h3>
+                    <p class="text-gray-400">Relax and unwind in our sparkling outdoor swimming pool.</p>
+                </div>
+                <!-- Amenity 3 -->
+                <div class="text-center">
+                    <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-yellow-500 flex items-center justify-center text-gray-900 text-5xl">
+                        <!-- Icon Placeholder -->
+                        <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 16H7V5h10v14z"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2">Fitness Center</h3>
+                    <p class="text-gray-400">Maintain your workout routine with our state-of-the-art gym equipment.</p>
+                </div>
+                <!-- Amenity 4 -->
+                <div class="text-center">
+                    <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-yellow-500 flex items-center justify-center text-gray-900 text-5xl">
+                        <!-- Icon Placeholder -->
+                        <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-2">24/7 Front Desk</h3>
+                    <p class="text-gray-400">Our friendly staff is always available to assist you, day or night.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section-padding bg-gray-800">
+        <div class="container mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-yellow-500">Gallery</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <img src="https://placehold.co/600x400/2c2c2c/e2e8f0?text=Load+an+Image" alt="Lobby Area" class="rounded-xl shadow-lg w-full h-auto object-cover transform transition-transform duration-300 hover:scale-105">
+                <img src="https://placehold.co/600x400/2c2c2c/e2e8f0?text=Load+an+Image" alt="Dining Area" class="rounded-xl shadow-lg w-full h-auto object-cover transform transition-transform duration-300 hover:scale-105">
+                <img src="https://placehold.co/600x400/2c2c2c/e2e8f0?text=Load+an+Image" alt="Swimming Pool" class="rounded-xl shadow-lg w-full h-auto object-cover transform transition-transform duration-300 hover:scale-105">
+                <img src="https://placehold.co/600x400/2c2c2c/e2e8f0?text=Load+an+Image" alt="Fitness Center" class="rounded-xl shadow-lg w-full h-auto object-cover transform transition-transform duration-300 hover:scale-105">
+                <img src="https://placehold.co/600x400/2c2c2c/e2e8f0?text=Load+an+Image" alt="Hotel Exterior" class="rounded-xl shadow-lg w-full h-auto object-cover transform transition-transform duration-300 hover:scale-105">
+                <img src="https://placehold.co/600x400/2c2c2c/e2e8f0?text=Load+an+Image" alt="Meeting Room" class="rounded-xl shadow-lg w-full h-auto object-cover transform transition-transform duration-300 hover:scale-105">
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservations Section -->
+    <section id="reservations" class="section-padding">
+        <div class="container mx-auto max-w-2xl bg-gray-800 rounded-xl shadow-lg p-8">
+            <h2 class="text-4xl font-bold text-center mb-8 text-yellow-500">Reservations</h2>
+            <p class="text-center text-gray-400 mb-8">Ready to book your stay? Fill out the form below to check availability and make a reservation.</p>
+            <form id="reservation-form" class="space-y-6">
+                <div>
+                    <label for="name" class="block text-sm font-medium mb-1">Full Name</label>
+                    <input type="text" id="name" name="name" class="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:border-yellow-500" required>
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium mb-1">Email Address</label>
+                    <input type="email" id="email" name="email" class="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:border-yellow-500" required>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="check-in" class="block text-sm font-medium mb-1">Check-in Date</label>
+                        <input type="date" id="check-in" name="check-in" class="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:border-yellow-500" required>
+                    </div>
+                    <div>
+                        <label for="check-out" class="block text-sm font-medium mb-1">Check-out Date</label>
+                        <input type="date" id="check-out" name="check-out" class="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:border-yellow-500" required>
+                    </div>
+                </div>
+                <div>
+                    <label for="room-type" class="block text-sm font-medium mb-1">Room Type</label>
+                    <select id="room-type" name="room-type" class="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:border-yellow-500" required>
+                        <option value="">Select a room</option>
+                        <option value="standard-king">Standard King</option>
+                        <option value="double-queen">Double Queen</option>
+                        <option value="executive-suite">Executive Suite</option>
+                    </select>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="w-full md:w-auto bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-yellow-400 transition-colors duration-300">Submit Reservation</button>
+                </div>
+            </form>
+            <p id="form-message" class="mt-4 text-center text-lg text-green-500 hidden"></p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-gray-900">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-8 text-yellow-500">Contact Us</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-2">Get in Touch</h3>
+                    <p class="text-gray-400 mb-4">Have questions? We're here to help. Reach out to us via phone, email, or visit us in person.</p>
+                    <p class="mb-2"><strong class="text-yellow-500">Phone:</strong> <a href="tel:2704438401" class="text-yellow-500">(270) 443-8401</a></p>
+                    <p class="mb-2"><strong class="text-yellow-500">Email:</strong> info@deluxeinn.com</p>
+                    <p class="mb-2"><strong class="text-yellow-500">Address:</strong> 1234 Broadway Street, Paducah, KY 42001</p>
+                </div>
+                <div class="md:text-left">
+                    <h3 class="text-2xl font-semibold mb-4">Location</h3>
+                    <p class="text-gray-400 mb-4">We are conveniently located in the heart of the city, close to major attractions and business centers.</p>
+                    <!-- Google Maps Iframe Placeholder -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.28283515406!2d-122.08424968468164!3d37.42206587982572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5e0c50d3221%3A0x6b7c93e433a0e6b5!2sGoogleplex!5e0!3m2!1sen!2sus!4v1628178873401!5m2!1sen!2sus"
+                        width="100%" height="250" class="map-rounded" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6 text-center">
+        <p class="text-gray-400">&copy; 2024 Deluxe Inn. All Rights Reserved.</p>
+    </footer>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>
